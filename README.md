@@ -2,7 +2,7 @@
 
 逐条解释另一个 AI agent 留下的待决策项，和你一项一项敲定，最后产出决策总账。
 
-配套技能仓库：[explain-to-me](https://github.com/JamieJustTang/explain-to-me)（把 Claude/Codex 会话导入 DeepSeek Harness）、[ste-language-improvement](https://github.com/JamieJustTang/ste-language-improvement)（让解释保持平实中文）。
+配套技能仓库：[explain-to-me](https://github.com/JamieJustTang/explain-everything-to-me-dsh)（把 Claude/Codex 会话导入 DeepSeek Harness）、[ste-language-improvement](https://github.com/JamieJustTang/ste-language-zh-improvement)（让解释保持平实中文）。
 
 ## 场景
 
@@ -37,7 +37,7 @@ AI：已记录：选 A，加 5 遍人工对照。下一项……
 ## 安装
 
 ```sh
-git clone https://github.com/JamieJustTang/decision-walkthrough.git \
+git clone https://github.com/JamieJustTang/decision-one-by-one.git \
   ~/.agents/skills/decision-walkthrough
 ```
 
