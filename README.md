@@ -1,14 +1,14 @@
-# decision-walkthrough
+# decision-one-by-one
 
-逐条解释另一个 AI agent 留下的待决策项，和你一项一项敲定，最后产出决策总账。
+逐条解释、逐项敲定一份材料里的待决策项，一次一问，最后产出决策总账。
 
-配套技能仓库：[explain-to-me](https://github.com/JamieJustTang/explain-everything-to-me-dsh)（把 Claude/Codex 会话导入 DeepSeek Harness）、[ste-language-improvement](https://github.com/JamieJustTang/ste-language-zh-improvement)（让解释保持平实中文）。
+推荐搭档：[ste-language-zh-improvement](https://github.com/JamieJustTang/ste-language-zh-improvement)（让解释保持平实中文）。
 
 ## 场景
 
-Claude/Codex 干活越来越猛，汇报也越来越“不说人话”：一次抛出十几个待决策项，每项带 A/B/C 选项和一堆内部黑话。人跟不上时只有两种坏结局——全部同意（放弃把关），或者全部搁置（阻塞工程）。
+决策密集的材料都有一个通病：一次塞给你十几个待决策项，每项带 A/B/C 选项和一堆只有起草者懂的术语——方案文档、评审意见、会议纪要、AI 助手的汇报，无一幸免。人跟不上时只有两种坏结局——全部同意（放弃把关），或者全部搁置（阻塞工程）。
 
-装上本技能后，你在 DeepSeek 会话里把那段汇报一贴：
+装上本技能后，你把那段材料往对话里一贴：
 
 > 我看不懂。待决策项太多了。请你一个一个阐述和解释选项分别的意义。我们一个一个来敲定。
 
@@ -38,7 +38,7 @@ AI：已记录：选 A，加 5 遍人工对照。下一项……
 
 ```sh
 git clone https://github.com/JamieJustTang/decision-one-by-one.git \
-  ~/.agents/skills/decision-walkthrough
+  ~/.agents/skills/decision-one-by-one
 ```
 
-放入 agent 的技能目录即被自动发现。技能正文见 [SKILL.md](SKILL.md)——本技能从一段真实的 DeepSeek Harness 会话提炼：用户面对多智能体运行产出的十几项待决策清单逐项敲定、纠正、入档的完整过程。
+放入你所用 agent 的技能目录即被自动发现。技能正文见 [SKILL.md](SKILL.md)——从一段真实的决策走查会话提炼：用户面对十几项待决策清单逐项敲定、纠正、入档的完整过程。
